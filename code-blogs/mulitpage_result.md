@@ -1,5 +1,4 @@
-
-##The Problem
+## The Problem
 
 API returns multipage results. We want to get them all.
 
