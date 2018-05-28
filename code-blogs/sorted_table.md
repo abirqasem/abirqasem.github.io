@@ -3,7 +3,7 @@
 
 We want sortable and searchable html table
 
-![Image of Yaktocat](pic_for_apps/prettytable.png)
+![Image of Yaktocat](pics_for_apps/prettytable.png)
 
 
 ## Solution
