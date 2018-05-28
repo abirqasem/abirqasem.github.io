@@ -3,6 +3,8 @@
 
 We want sortable and searchable html table
 
+![Image of Yaktocat](pic_for_apps/prettytable.png)
+
 
 ## Solution
 
