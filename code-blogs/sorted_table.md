@@ -8,15 +8,15 @@
 
 
 
-We will use [Google Apps Script](https://developers.google.com/apps-script/), to fetch data from a Google sheet and DataTables (a JQuery plug-in) to display them. While in this blog we are showing a  basic implementation of the DataTables, it is a powerful tool with tons of features. If you are interested here's a nice [guide](https://datatables.net/manual/installation). 
+We will use [Google Apps Script](https://developers.google.com/apps-script/), to fetch data from a Google sheet and DataTables (a JQuery plug-in) to display them. While in this blog we are showing a  basic implementation of the DataTables, it is a powerful tool with tons of features. If you are interested here's a nice [guide](https://datatables.net/manual/installation).
 
 
 
-#Steps 
+# Steps
 
-## Add the libraries 
+## Add the libraries
 
->####Make sure you have JQuery installed. It is after all a  **JQuery** plug-in.
+>#### Make sure you have JQuery installed. It is after all a  **JQuery** plug-in.
 
 ```html
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
@@ -25,7 +25,7 @@ We will use [Google Apps Script](https://developers.google.com/apps-script/), to
 ```
 
 
->####Add the DataTables CSS and the library
+>#### Add the DataTables CSS and the library
 
 ```html
 <-- There may be a later version available -->
@@ -35,7 +35,7 @@ We will use [Google Apps Script](https://developers.google.com/apps-script/), to
 
 ## The Table HTML
 
->####The table's HTML is quite straight forward with only a few requirements. Your table must have a `table id` and one of the css class must be `display`. You will also need a header row. 
+>#### The table's HTML is quite straight forward with only a few requirements. Your table must have a `table id` and one of the css class must be `display`. You will also need a header row.
 
 >Here's a skeleton of a table that will work with DataTables
 
@@ -66,12 +66,12 @@ $(document).ready(function(){
 }
 ```
 
->####Hand coding table HTML is a pain. So here's a utility to make simple data table
+>#### Hand coding table HTML is a pain. So here's a utility to make simple data table
 >Make sure this code is on the client side JS and not server side JS.
 
 ```javascript
 
-/* 
+/*
 	Utility to make DataTables compliant HTML table  
 	data is a 2d array (first row assumed to be header) and table_id is the id for the table	Note: data will mutate. So please keep a copy
 */  
@@ -81,10 +81,10 @@ function make_table_html (data, table_id) {
   var header_row = data[0]
   var cols = header_row.length;
 
-  data.shift(); // data mutates 
+  data.shift(); // data mutates
   var data_rows = data
   var t_html = "<table id="+"'" + table_id+"'"+ "class='table table-striped table-hover cell-border'>"
-  
+
   var header_html = "<thead><tr>"
   for (var c in header_row) {
         header_html+= "<th>"+ header_row[c] +"</th>"
@@ -111,7 +111,7 @@ function make_table_html (data, table_id) {
 ```
 
 
-#(Almost) Complete Google AppsScript example
+# (Almost) Complete Google AppsScript example
 
 ## Code.gs
 
@@ -136,31 +136,28 @@ function get_data () {
   <base target="_top">
   <!-- add your libraries JQuery and JQuery UI and their CSS, DataTables CSS and JS, I have also used Bootstrap, but that is not a requirement-->
   </head>
-  
+
   <body>
-  <div class="container" id="mainsec"> 
+  <div class="container" id="mainsec">
      <div class="row"><button type='button' class='btn btn-primary' id='view_data'>View Data</button>
      </div>
      <div id='view_data_area' class="row"></div>
    </div>
-  
+
   <script>
-   
+
    var view_data = document.getElementById('view_data');
    view_data.onclick = function (event) {
     google.script.run.withSuccessHandler (function (data) {
       $('#view_data_area').html (make_table_html (data, 'senators'));
       $('#senators').DataTable();
-    
+
     }).withFailureHandler(function (e){console.log(e)}).get_data();      
   }
-  
- 
+
+
   </script>
   </body>
 </html>
 
 ```
-
-
-
