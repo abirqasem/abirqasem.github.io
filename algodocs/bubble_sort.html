@@ -32,22 +32,7 @@
       <p>Dumb Bubble sort</p>
     </div>
     <div class='code'>
-      <div class="highlight"><pre><span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">procedure bubbleSort( A : list of sortable items )</span>
-<span class="sd">    n = length(A)</span>
-<span class="sd">    repeat</span>
-<span class="sd">        newn = 0</span>
-<span class="sd">        for i = 1 to n-1 inclusive do</span>
-<span class="sd">            if A[i-1] &gt; A[i] then</span>
-<span class="sd">                swap(A[i-1], A[i])</span>
-<span class="sd">                newn = i</span>
-<span class="sd">            end if</span>
-<span class="sd">        end for</span>
-<span class="sd">        n = newn</span>
-<span class="sd">    until n = 0</span>
-<span class="sd">end procedure</span>
-
-<span class="sd">&#39;&#39;&#39;</span></pre></div>
+      <div class="highlight"><pre></pre></div>
     </div>
   </div>
   <div class='clearall'></div>
@@ -56,6 +41,30 @@
       <div class='octowrap'>
         <a class='octothorpe' href='#section-2'>#</a>
       </div>
+      <p>procedure bubbleSort( A : list of sortable items )
+    n = length(A)
+    repeat
+        newn = 0
+        for i = 1 to n-1 inclusive do
+            if A[i-1] &gt; A[i] then
+                swap(A[i-1], A[i])
+                newn = i
+            end if
+        end for
+        n = newn
+    until n = 0
+end procedure</p>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-3'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-3'>#</a>
+      </div>
       
     </div>
     <div class='code'>
@@ -63,8 +72,19 @@
 
     <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">unsorted</span><span class="p">)</span>
 
-    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span> <span class="c1">#repeat</span>
-        <span class="n">ls</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span> <span class="c1">#repeat</span></pre></div>
+    </div>
+  </div>
+  <div class='clearall'></div>
+  <div class='section' id='section-4'>
+    <div class='docs'>
+      <div class='octowrap'>
+        <a class='octothorpe' href='#section-4'>#</a>
+      </div>
+      <h3>interesting []</h3>
+    </div>
+    <div class='code'>
+      <div class="highlight"><pre>        <span class="n">ls</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
             <span class="k">if</span> <span class="n">unsorted</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">unsorted</span> <span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
                 <span class="n">temp</span> <span class="o">=</span> <span class="n">unsorted</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
@@ -81,10 +101,10 @@
     </div>
   </div>
   <div class='clearall'></div>
-  <div class='section' id='section-3'>
+  <div class='section' id='section-5'>
     <div class='docs'>
       <div class='octowrap'>
-        <a class='octothorpe' href='#section-3'>#</a>
+        <a class='octothorpe' href='#section-5'>#</a>
       </div>
       
     </div>
@@ -95,10 +115,10 @@
     </div>
   </div>
   <div class='clearall'></div>
-  <div class='section' id='section-4'>
+  <div class='section' id='section-6'>
     <div class='docs'>
       <div class='octowrap'>
-        <a class='octothorpe' href='#section-4'>#</a>
+        <a class='octothorpe' href='#section-6'>#</a>
       </div>
       <p>print (random)</p>
     </div>
