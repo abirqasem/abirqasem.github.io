@@ -9,9 +9,9 @@
 ### [Console]( https://teamli60.signin.aws.amazon.com/console)
 
 Once you are logged in you can navigate to cloud 9 IDE by exploring the services and choosing `cloud 9`
-You can also go directly to a cloud 9 that is created for us. 
+You can also go directly to a cloud 9 that is created for us.
 ### Here it is [cafe machine](https://console.aws.amazon.com/cloud9/home/shared)
->*Remember* you will need to enter three pieces of information. First it will ask for account id or >alias, enter `teamli60`, then `tanya` and the usual password. You will be all set. 
+>*Remember* you will need to enter three pieces of information. First it will ask for account id or alias, enter `teamli60`, then `tanya` and the usual password. You will be all set. 
 
 You can make your [own machine and ide](https://console.aws.amazon.com/cloud9/home/create)
 
