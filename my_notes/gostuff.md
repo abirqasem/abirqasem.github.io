@@ -1,3 +1,4 @@
+
 ####Go syntactic quirks
 
 ```
