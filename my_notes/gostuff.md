@@ -1,5 +1,4 @@
-
-####Go syntactic quirks
+### Go syntactic quirks
 
 ```
 func (file *File) Write(b []byte) (n int, err error)
@@ -10,7 +9,7 @@ func (file *File) Write(b []byte) (n int, err error)
 int main  is main int
 
 
-###Go stuff the needs to be tested out
+### Go stuff the needs to be tested out
 
 1. go fmt // what is package level
 2. godoc //why is it a web server
