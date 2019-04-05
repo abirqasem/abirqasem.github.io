@@ -21,11 +21,6 @@ int main  is main int
 2. comma, ok medium
 3. `%+v` and `%#v` 
 4. toString of go is  --String (it is in my go kv idiom)
-5. `v ...interface{}` then v acts like a variable of type `[] interface {}` 
- // array off interface of type 
-6. 
-`x := []int{1,2,3}
-y := []int{4,5,6}
-x = append(x, y...)
-`
+5. `v ...interface{}` then v acts like a variable of type `[] interface {}// array off interface of type `
+6. `x := []int{1,2,3} y := []int{4,5,6} x = append(x, y...)`
 7. `iota`
