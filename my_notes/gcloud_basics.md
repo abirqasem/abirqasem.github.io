@@ -48,7 +48,7 @@ some permission issues. But for most AppEngine projects it seem to work.
 
 >The command is. It works well in my mac. Did not work on cloud 9
 
-`appcfg.py -A YOUR_PROJECT_ID download_app DESTINATION_DIRECTORY`
+`appcfg.py -A YOUR_PROJECT_ID download_app --no_cookies  DESTINATION_DIRECTORY`
 
 If `appcfg.py` is not in your path, find out where `gcloud` is by `which gcloud`
 
