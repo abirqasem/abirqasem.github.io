@@ -42,7 +42,7 @@ Open the app in a browser.
 	 **Are you sure that is the latest version?**
 	 If yes then `gcloud app deploy`
 
-#### Downloading the running apps source code 
+#### Downloading the running apps source code
 This is very useful because you can always have access to actual code that is running as your app (you can get the code of older versions too), no matter wherever you are (say you are in a cafe and do not have the desktop). There seems to be
 some permission issues. But for most AppEngine projects it seem to work.
 
@@ -58,6 +58,9 @@ If `appcfg.py` is not in your path, find out where `gcloud` is by `which gcloud`
 `ls` and you you will see `appcfg.py`
 
 >>_Run the command now._
+
+#### Viewing source code on Cloud console
+Go to [debug](https://console.cloud.google.com/debug) section of console. Deployed files will appear on the left side.
 
 ### API manangement
 
