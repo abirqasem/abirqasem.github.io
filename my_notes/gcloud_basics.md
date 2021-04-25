@@ -62,6 +62,8 @@ If `appcfg.py` is not in your path, find out where `gcloud` is by `which gcloud`
 #### Viewing source code on Cloud console
 Go to [debug](https://console.cloud.google.com/debug) section of console. Deployed files will appear on the left side.
 
+[Reference](https://www.mail-archive.com/google-appengine@googlegroups.com/msg94219.html)
+
 ### API manangement
 
 **How to see enabled APIs?**
